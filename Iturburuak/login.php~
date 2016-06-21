@@ -1,0 +1,29 @@
+<?php
+	if(!isset($_POST['email']) || !isset($_POST['password'])) {
+?>
+
+	<form class="form-signin" method="post">
+		<h3 class="form-signin-heading">Sartu erabiltzailea eta pasahitza</h3>
+
+		<label for="inputEmail" class="sr-only">Email address</label>
+		<input type="email" name="email" id="inputEmail" class="form-control" placeholder="E-posta" required autofocus>
+		
+		<label for="inputPassword" class="sr-only">Password</label>
+		<input type="password" name="password" id="inputPassword" class="form-control" placeholder="Pasahitza" required>
+		
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Eguneratu indizeak</button>
+	</form>
+
+<?php
+	} else {
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+
+		require("../config/config.php");
+		
+		if($admin_user==$email && $admin_pwd_sha1==sha1($password)){
+			$login_ok=true;
+		} else {
+			$login_ok=false;
+		}
+	}
