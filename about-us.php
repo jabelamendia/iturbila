@@ -15,11 +15,19 @@ $(document).ready(function()
 
 <h1 class="newfont">Guri buruz</h1>
 
-<h3>Egilea:</h3>
+<h3>Garatzailea:</h3>
 
 <address>
-	<strong>Jon Ander Belamendia</strong><br>
+	<strong>Jon Ander Belamendia Arruabarrena</strong><br>
 	<a href="mailto:jabelamendia@hotmail.com">jabelamendia@hotmail.com</a>
+</address>
+
+
+<h3>Zuzendariak:</h3>
+
+<address>
+	Izaskun Etxeberria Uztarroz. <em>UPV/EHUko Informatika Fakultateko irakaslea.</em><br>
+	Iñaki Alegria Loinaz. <em>UPV/EHUko Informatika Fakultateko irakaslea.<em><br>
 </address>
 
 
